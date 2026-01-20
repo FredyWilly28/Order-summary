@@ -43,7 +43,6 @@ body{
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top center;
-    overflow: hidden;
 }
 
 .main-container{
@@ -184,8 +183,8 @@ body{
     .main-container{
         width: 100%;
         max-width: 450px; 
-        margin: 1rem auto;
-        padding: 2rem;
+        margin: 0 auto;
+        padding: 1rem;
     }
     .card-description{
         background-color: #fff;
