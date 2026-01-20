@@ -47,9 +47,9 @@ body{
 
 .main-container{
     width: 100%;
-    min-width: 360px;
-    margin: 3rem auto;
-    padding: 2rem;
+    min-width: 380px;
+    margin: 1.5rem auto;
+    padding: 1rem;
 }
 
 .article-container{
@@ -183,8 +183,8 @@ body{
     .main-container{
         width: 100%;
         max-width: 450px; 
-        margin: 0 auto;
-        padding: 1rem;
+        margin: 1rem auto;
+        padding: 2rem;
     }
     .card-description{
         background-color: #fff;
