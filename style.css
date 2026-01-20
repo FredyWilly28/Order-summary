@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family:'Monserrat-normal';
+    src:  
+       local('Monserrat-normal'),
+       url('assets/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face{
+    font-family:'Montserrat-semiBold';
+    src:  
+       local('Montserrat-semiBold'),
+       url('assets/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face{
+    font-family:'Montserrat-extraBold';
+    src:  
+       local('Montserrat-extraBold'),
+       url('assets//Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+}
+
+body{
+    font-family:'Monserrat-normal';
+    font-size: 16px;
+    background-color: hsl(225, 100%, 94%);
+    background-color: hsl(225, 100%, 94%);
+    background-image: url('assets/images/pattern-background-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    overflow: hidden;
+}
+
+.main-container{
+    width: 100%;
+    min-width: 360px;
+    margin: 3rem auto;
+    padding: 2rem;
+}
+
+.article-container{
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); 
+}
+
+.article-container .card-image img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-description{
+    background-color: #fff;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 2rem;
+}
+
+.card-description .summary{
+    font-family: 'Montserrat-semiBold', sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 0.8rem;
+}
+
+.card-description .text{
+    font-size: 14px;
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+    margin-bottom: 1rem;
+    word-wrap: break-word;
+}
+
+.plan-section{
+    display: block;
+    padding:  1rem;
+    background-color:  hsl(225, 100%, 94%);
+    border-radius: 8px;
+    margin-bottom: 1.2rem;
+}
+
+.subscription{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.subscription img{
+    width: 48px; 
+    height: 48px;
+}
+
+.subscription .annual-plan p:first-child{
+    font-family: 'Montserrat-semiBold', sans-serif;
+    text-transform: capitalize;
+    font-size: clamp(13px, 5vw, 16px);
+}
+
+.subscription .annual-plan p:last-child{
+    color: hsl(224, 23%, 55%);
+    font-size: clamp(12px, 5vw, 16px);
+}
+
+.plan-section a{
+    font-size: clamp(13px, 5vw, 16px);
+}
+
+.plan-section a{
+    display: block;
+    text-align: center;
+    font-size: clamp(13px, 5vw, 14px);
+    color: hsl(245, 75%, 52%); 
+    font-weight: 700;            
+    transition: color 0.3s ease;
+}
+
+.plan-section a:hover{
+    color: hsl(224, 58%, 54%);  
+    text-decoration: none;
+}
+
+.buttons-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.buttons-container .proceed-payment{
+    font-family: 'Montserrat-semiBold', sans-serif;
+    padding: 0.8rem ;
+    background-color:  hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.buttons-container .proceed-payment:hover{
+    background-color:hsla(224, 58%, 54%, 0.61) ;
+}
+
+.buttons-container .cancel-order{
+    font-family: 'Montserrat-semiBold', sans-serif;
+    padding: 0.8rem;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out,color 0.3s ease-in-out;
+}
+
+.buttons-container .cancel-order:hover{
+    background-color: rgb(233, 113, 113);
+    color: #fff;
+}
+
+
+
+@media(min-width:450px){
+    body{
+        background-color: hsl(230, 36%, 83%);
+        background-image: url('assets/images/pattern-background-desktop.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top center;
+    }
+    .main-container{
+        width: 100%;
+        max-width: 450px; 
+        margin: 1rem auto;
+        padding: 2rem;
+    }
+    .card-description{
+        background-color: #fff;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        padding: 2.5rem 2rem; 
+    }
+    .plan-section{
+        display:flex ;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
